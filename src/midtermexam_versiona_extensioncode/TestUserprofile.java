@@ -12,7 +12,6 @@ package midtermexam_versiona_extensioncode;
  * @author astro
  */
 public class TestUserprofile {
-    private String[] genres = {"Comedy", "Drama", "Action", "Mystery"};
     public static void main(String args[]){
         UserProfile a=new UserProfile();
         //Scanner input = new Scanner(System.in);
@@ -20,11 +19,20 @@ public class TestUserprofile {
         //String userName=input.nextLine();
         a.setUserID(userName);
         a.getUserID();
-        //-------------------------------------------------------------Genre
-        System.out.println(a.getGenres());
+        //-------------------------------------------------------------Genres
+        String[] genres = {"Comedy", "Drama", "Action", "Mystery"};
+        System.out.println("Genre options: ");
+        for(int i=0;i<4;i++){//4 means genres length
+            System.out.println(genres[i]);
+        }
+        System.out.println("CHOOSE ONE: ");
         //String genre=input.nextLine();
         String genre="Comedy";
         a.setGenre(genre);
+        System.out.println(a.getGenre());
+        
+        //--------------------------------------------------------------End Message
+        System.out.println(a.getMessage());
         
     }
 }
