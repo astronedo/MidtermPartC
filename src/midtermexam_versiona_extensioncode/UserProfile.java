@@ -25,11 +25,6 @@ public class UserProfile
      * @param givenID the ID to assign to this user
      * @param givenGenre the users favourite genre
      */
-    public UserProfile(String givenID, String givenGenre)
-    {
-        userID = givenID;
-        genre= givenGenre;
-    }
 
     /**
      * A getter for the userID
