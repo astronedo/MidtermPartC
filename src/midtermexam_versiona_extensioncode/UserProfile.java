@@ -5,7 +5,7 @@ public class UserProfile
     
     private String userID;//the userID
     private String genre;// the user's preferred genre of movie
-    //private String[] genres = {"Comedy", "Drama", "Action", "Mystery"};//available genres of movies
+    //private String[] genres= {"Comedy", "Drama", "Action", "Mystery"};//available genres of movies
     
     public String getUserID() {
         return userID;
@@ -21,6 +21,9 @@ public class UserProfile
 
     public void setGenre(String genre) {
         this.genre = genre;
+    }
+    public String getMessage(){
+        return "The user is created";
     }
     
     
